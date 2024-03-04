@@ -15,7 +15,7 @@ class ApiController extends Controller
      */
     public function __invoke(Request $request)
     {
-        $response = ApiResolveAi::get('/list-problem')->json();
+        $response = ApiResolveAi::get('/problems')->json();
 
         foreach ($response as $item) {
             $i[] = $item['title'];

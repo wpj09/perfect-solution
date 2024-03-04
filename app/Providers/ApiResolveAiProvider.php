@@ -17,7 +17,7 @@ class ApiResolveAiProvider extends ServiceProvider
         $this->app->bind('api-resolve', function () {
             return Http::withOptions([
                 'verify' => false,
-                'base_uri' => 'http://localhost:3333/'
+                'base_uri' => 'https://api-resolveai-v1.herokuapp.com/'
             ])->withHeaders([
                 'Autorization' => 'Beares ',
             ]);
